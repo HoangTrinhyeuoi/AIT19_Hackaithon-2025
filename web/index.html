@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediChat - Chat Bot Y Tế Thông Minh</title>
+    <link href="CSS/style_1.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-heartbeat logo-icon"></i>
+            MediChat
+        </div>
+        <div class="nav-links">
+            <a href="#" class="nav-link active">Trang Chủ</a>
+            <a href="#" class="nav-link">Dịch Vụ</a>
+            <a href="#features" class="nav-link">Tính Năng</a>
+            <a href="#" class="nav-link">Liên Hệ</a>
+        </div>
+        <div class="auth-links">
+            <button class="btn btn-outline"><a class="nav-link" href="JSP/login.jsp">Đăng nhập</a></button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Chat Bot Y Tế Thông Minh</h1>
+                <p class="hero-text">MediChat là trợ lý ảo y tế thông minh, luôn sẵn sàng hỗ trợ bạn 24/7. Tư vấn sức khỏe nhanh chóng, chính xác và hoàn toàn bảo mật từ các nguồn y khoa đáng tin cậy.</p>
+            </div>
+        </section>
+
+        <section id="chat-preview" class="chat-preview-section">
+            <h2 class="section-title">Trải Nghiệm Chat Bot Y Tế</h2>
+            <div class="chat-preview">
+                <div class="chat-header">
+                    <i class="fas fa-robot"></i>
+                    Chat với MediChat
+                </div>
+                <div class="chat-messages">
+                    <div class="message bot-message">
+                        Xin chào! Tôi là MediChat, trợ lý y tế ảo của bạn. Tôi có thể giúp gì cho bạn hôm nay?
+                    </div>
+                    <div class="message user-message">
+                        Tôi đang bị đau đầu và hơi sốt.
+                    </div>
+                    <div class="message bot-message">
+                        Tôi rất tiếc khi nghe bạn không khỏe. Đau đầu kèm sốt có thể là dấu hiệu của nhiều vấn đề sức khỏe khác nhau. Bạn đã bị những triệu chứng này trong bao lâu rồi? Bạn có triệu chứng nào khác không, ví dụ như ho, đau họng hay đau cơ?
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Nhập câu hỏi của bạn..." disabled>
+                    <button class="btn btn-primary" disabled>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+
+                <div class="chat-overlay">
+                    <i class="fas fa-lock overlay-icon"></i>
+                    <h3 class="overlay-title">Đăng nhập để sử dụng MediChat</h3>
+                    <p class="overlay-text">Vui lòng đăng nhập hoặc đăng ký tài khoản để chat với trợ lý y tế thông minh của chúng tôi</p>
+                    <div class="login-register-buttons">
+                        <button class="btn btn-outline"><a class="nav-link" href="JSP/login.jsp">Đăng nhập</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2 class="section-title">Tính Năng Nổi Bật</h2>
+            <p class="section-subtitle">MediChat cung cấp nhiều tính năng hữu ích giúp bạn quản lý sức khỏe tốt hơn</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-comment-medical"></i>
+                    </div>
+                    <h3 class="feature-title">Tư vấn y tế 24/7</h3>
+                    <p class="feature-text">Nhận tư vấn y tế cơ bản bất kỳ lúc nào, không cần đặt lịch hay chờ đợi.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3 class="feature-title">Bảo mật thông tin</h3>
+                    <p class="feature-text">Mọi cuộc trò chuyện và thông tin của bạn đều được mã hóa và bảo mật tuyệt đối.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book-medical"></i>
+                    </div>
+                    <h3 class="feature-title">Kiến thức y khoa cập nhật</h3>
+                    <p class="feature-text">Cung cấp thông tin y tế từ nguồn đáng tin cậy và luôn được cập nhật.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <h3 class="feature-title">Lịch sử tư vấn</h3>
+                    <p class="feature-text">Dễ dàng truy cập lại các cuộc trò chuyện và lời khuyên y tế trước đó.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3 class="feature-title">Nhắc nhở thuốc</h3>
+                    <p class="feature-text">Thiết lập nhắc nhở uống thuốc và lịch tái khám để không bỏ lỡ.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <h2 class="section-title">Cách Sử Dụng MediChat</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Đăng nhập</h3>
+                    <p>Đăng nhập vào hệ thống để bắt đầu sử dụng dịch vụ</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Bắt đầu chat</h3>
+                    <p>Đặt câu hỏi và nhận phản hồi tức thì từ trợ lý y tế thông minh</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Nhận tư vấn</h3>
+                    <p>Nhận thông tin hữu ích và lời khuyên phù hợp cho sức khỏe của bạn</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="login-register">
+            <h2 class="section-title">Bắt Đầu Ngay Hôm Nay</h2>
+            <p class="section-subtitle">Đăng nhập tài khoản miễn phí để trải nghiệm MediChat - trợ lý y tế thông minh</p>
+            <div class="login-register-buttons">
+                <button class="btn btn-outline"><a class="nav-link" href="JSP/login.jsp">Đăng nhập</a></button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MediChat - Trợ lý y tế thông minh. Mọi quyền được bảo lưu.</p>
+        <p>Lưu ý: MediChat không thay thế tư vấn y tế chuyên nghiệp. Luôn tham khảo ý kiến bác sĩ trong trường hợp khẩn cấp.</p>
+    </footer>
+
+</body>
+</html>

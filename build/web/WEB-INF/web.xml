@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.1" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_1.xsd">
+    <servlet>
+        <servlet-name>GoogleLogin</servlet-name>
+        <servlet-class>Controller.GoogleLogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SaveChatServlet</servlet-name>
+        <servlet-class>Controller.SaveChatServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoadChatServlet</servlet-name>
+        <servlet-class>Controller.LoadChatServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoadChatSessionsServlet</servlet-name>
+        <servlet-class>Controller.LoadChatSessionsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GoogleLogin</servlet-name>
+        <url-pattern>/loginGoogle</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>Controller.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SaveChatServlet</servlet-name>
+        <url-pattern>/SaveChatServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoadChatServlet</servlet-name>
+        <url-pattern>/LoadChatServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoadChatSessionsServlet</servlet-name>
+        <url-pattern>/LoadChatSessionsServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
